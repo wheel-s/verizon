@@ -22,16 +22,12 @@ const Favourites = () => {
    fetch('https://server-l9fy.vercel.app/api/favourite',
   
     {
-  
+
      headers:{
-      'authorization':`Bearer ${token}`,
-
-
+      'authorization':`Bearer ${token}`
     }}
    )
-    .then(res=>{
-      
-      return res.json()})
+    .then(res=>{return res.json()})
    .then(datas=>{console.log(datas)
 
 

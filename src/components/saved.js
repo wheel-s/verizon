@@ -18,9 +18,9 @@ const Saved = () => {
 
 
  useEffect(()=>{
-   fetch(`https://server-l9fy.vercel.app/api/info/${userId}`)
+   fetch(`https://server-l9fy.vercel.app/api/info/created/${userId}`)
     .then(res=>{return res.json()})
-   .then(datas=>{setImages(datas)
+   .then(datas=>{console.log(datas)
 
 
    })

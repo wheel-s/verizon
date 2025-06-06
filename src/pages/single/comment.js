@@ -25,7 +25,7 @@ const Comment = () => {
      .then(datas=>{setValue(datas)})
       .catch(err=>{console.log(err)})
       
-    },[])
+    },[Msg])
     const Post = ()=>{
   const storage = localStorage.getItem('user')
   const tokens=JSON.parse(storage)
@@ -76,10 +76,10 @@ const Comment = () => {
       
        value.map((item, index)=>{
         return(
-          <Link>
-          <div className={comment.main} key={index} >
+          <Link key={index}>
+          <div className={comment.main}  >
             <div className={comment.flex}>
-                <img src={item.img} alt={'pin'} width={38} height={38}  className={comment.image} />
+                <img src={item.img} alt={item.user[0]} width={38} height={38}  className={comment.image} />
                <p className={comment.user}>{item.user}</p>
             </div>
   
