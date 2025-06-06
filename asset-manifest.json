@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/verizon/static/css/main.c0868515.css",
+    "main.js": "/verizon/static/js/main.a4b36833.js",
+    "static/js/453.ed3810f9.chunk.js": "/verizon/static/js/453.ed3810f9.chunk.js",
+    "static/media/pic7.jpg": "/verizon/static/media/pic7.e5df2e8121ba46e3864d.jpg",
+    "static/media/pic8.webp": "/verizon/static/media/pic8.51288babd091f39813c6.webp",
+    "static/media/pic5.jpg": "/verizon/static/media/pic5.f6f82de8dc018a287ed1.jpg",
+    "static/media/goku.jpg": "/verizon/static/media/goku.63e1c30c1a3d6e164fc2.jpg",
+    "static/media/settings.png": "/verizon/static/media/settings.b9baf91ec16357a2207f.png",
+    "static/media/feedback2.png": "/verizon/static/media/feedback2.5a63dfda5142b28a522b.png",
+    "static/media/josh.webp": "/verizon/static/media/josh.e81cbf76f34b63ed3d08.webp",
+    "static/media/lovely.avif": "/verizon/static/media/lovely.3281d3f63ffc8ceb331d.avif",
+    "static/media/pic4.jpg": "/verizon/static/media/pic4.fe017c2fcac6e3207c8a.jpg",
+    "static/media/heart.png": "/verizon/static/media/heart.c412cbaead4744166c20.png",
+    "static/media/history.png": "/verizon/static/media/history.65e3b3d173374e2b860a.png",
+    "static/media/share.png": "/verizon/static/media/share.8f7deca4e2be5ff91343.png",
+    "static/media/dark.webp": "/verizon/static/media/dark.9d106f4ae270a8927a10.webp",
+    "index.html": "/verizon/index.html",
+    "main.c0868515.css.map": "/verizon/static/css/main.c0868515.css.map",
+    "main.a4b36833.js.map": "/verizon/static/js/main.a4b36833.js.map",
+    "453.ed3810f9.chunk.js.map": "/verizon/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0868515.css",
+    "static/js/main.a4b36833.js"
+  ]
+}
