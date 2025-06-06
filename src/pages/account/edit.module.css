@@ -1,0 +1,82 @@
+.edit{
+    justify-self: center;
+
+}
+h4{
+    text-align: center;
+
+}
+
+
+.header{
+    display: grid;
+    justify-content: center;
+P{
+    font-size: 1rem;
+    text-align: center;
+}
+}
+.control{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+.p{
+    background: plum;
+    width: 3rem;
+      padding:2.2rem 1.8rem 2.2rem 1em;
+    border-radius: 3.3rem;
+
+    text-align:center ;
+    font-size: 1.7rem;
+   justify-self: center;
+    position: relative;
+    
+    top: 2rem;
+    margin-bottom: 4rem;
+    
+}
+
+
+.control input{
+
+    justify-self: center;
+    text-align: start;
+    display: block;
+    top: rem;
+    margin-left: rem;
+    border-radius: .8rem;
+    padding: .7rem 6rem 1rem 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.button{
+    display: block;
+    text-align: start;
+    margin-left: rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .7rem 3rem 1rem 3rem;
+     justify-self:center;
+    
+
+}
+.msg{
+    margin-bottom: -.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: gray;
+    border-radius: 1rem;
+    padding: .8rem;
+    
+}
+
+@media(min-width:29em){
+    .edit{
+    
+        
+        justify-self: center;
+    }
+}

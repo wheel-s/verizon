@@ -1,0 +1,71 @@
+
+
+.user{
+    margin-top: 1rem;
+    p{
+        text-align: center;
+        font-size: 1.1rem;
+        
+    }
+}
+.header{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+.p{
+    background: plum;
+    width: 3rem;
+    padding:.9rem .1rem .9rem .1rem;
+    border-radius: 2rem;
+    text-align:center ;
+    font-size: 1.2rem;
+   margin-bottom: -1rem;
+    position: relative;
+    left: 12.8em;
+    top: -4rem;
+
+    
+}
+.control input{
+
+
+    text-align: start;
+    top: -1rem;
+    margin-left: -2.6rem;
+    border-radius: .8rem;
+    padding: .6rem 6rem .6rem 1rem;
+}
+.pa{
+    margin-top: 2rem;
+}
+.fav{
+    margin-top: -1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.no{
+    display: grid;
+    justify-content: center;
+    margin-top: 6rem;
+    span{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
+.hr{
+    width: 8rem;
+    margin-top: -.7rem;
+}
+@media(min-width:29em){
+    .user{
+
+        margin-left:rem ;
+        justify-self:center;
+    }
+}
+

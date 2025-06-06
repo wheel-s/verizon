@@ -1,0 +1,164 @@
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.form{
+    
+    margin-right: rem;
+    width: 20rem;
+    justify-self: center;
+
+    height: 100vh; 
+}
+.back{
+    background-color: hsl(207, 50%, 84%);
+    border-radius: 1rem;
+    padding-top: 1.5rem;
+    padding-left: 3.1rem;
+    padding-right: 4rem;
+    padding-bottom: .5rem;
+    width: 19rem;
+  
+}
+
+
+
+
+.section{
+    display: flex;
+    margin-top: 1.7rem;
+    margin-bottom: -7.6rem;
+    margin-right: 2rem;
+    
+
+}
+
+.name{
+    margin-left: .5rem;
+    margin-top: .9rem;
+    font-size: 1.28rem;
+    color:black;
+}
+.img{
+    margin-left: 1rem;
+    margin-top: .7rem;
+}
+
+.sub{
+    font-size: 1rem;
+    margin-top: -3.6em;
+    margin-left: 1rem;
+   margin-bottom: -7.5rem;
+
+}
+
+h1{
+    
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .9rem;
+}
+p{
+    margin-top: -.1px;
+    font-weight: 350;
+    font-size: .8rem;
+
+}
+.form2{
+    margin-top: 9rem;
+    margin-left: .9rem;
+}
+.control{
+    label{
+        font-size:.9rem;
+        display: block;
+    }
+    input{
+    
+    text-align: start;
+    display: block;
+    margin-top: .6rem;
+    border-radius: .8rem;
+    width: 12rem;
+    padding: .9rem 0rem .9rem .7rem;
+    width: 17rem;
+    margin-bottom: 1.4rem;
+
+       
+    }
+
+}
+.action{
+  margin-top: .6rem;
+  display: flex;
+justify-content: center;
+  
+  
+    button{
+        border: none;
+        border-radius: 4px;
+       
+        color:white;
+        background-color: hsl(207, 74%, 49%);
+        width: 80%;
+        display: block;
+    
+    
+    border-radius: .8rem;
+     padding: .8rem 1rem .8rem 1rem;
+     
+    }
+
+}
+.Msg{
+    position: relative;
+    top: .7rem;
+    color:darkred;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.sign{
+    text-align: center;
+    margin-top: -.8rem;
+  font-size: 1rem;
+  a{
+    font-size: 1rem;
+  }
+}
+.footer{
+    display: flex;
+    font-size:1.2rem;
+    
+}
+.link{
+    font-size: .8rem;
+    color: blue;
+}
+
+
+
+@media(max-width:38em){
+    .center{
+        margin-top: 0rem;
+    }
+    .back{
+        background-color: hsl(207, 50%, 100%);
+        border-radius: 6px;
+        padding-top: 1.5rem;
+        padding-left: 1.3rem;
+        padding-right: 4.3rem;
+        padding-bottom: 1rem;
+        width: 15rem;
+        
+    }
+    .form{
+        margin-left: -1rem;
+    }
+    
+}
+
+

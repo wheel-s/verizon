@@ -1,0 +1,68 @@
+
+.more{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: -12rem;
+    p{
+    text-align: center;
+    }
+}
+
+.card{
+
+    background-color: hsl(210, 30%, 360%);
+    
+    border-radius: 1rem;
+    height: 13rem;
+    width: 16rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    p{
+        font-size: 1rem;
+     
+    }
+    a{
+        
+    }
+
+}
+.hr{
+    height: .1px;
+}
+.name{
+    color: white;
+    
+}
+.pa{
+   color: white;  
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+.button1{
+    display: block;
+    background-color: hsl(00, 30%, 35%);
+    text-align: start;
+    margin-left: rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .7rem 2rem .6rem 2rem;
+     justify-self:center;
+    
+
+}
+.button2{
+    display: block;
+    background-color: transparent;
+    text-align: start;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+    border: none;
+     font-size: 1rem;
+    img{
+        margin-left:-1rem 
+    }
+
+}

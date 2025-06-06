@@ -1,0 +1,126 @@
+
+.account{
+margin-left: .5rem;
+margin-bottom: rem;
+}
+.act{
+    display: flex;
+
+}
+.txt{
+   display: flex;
+    margin-left: rem;
+    margin-top: 2rem;
+    font-size: .9rem;
+
+    span{
+        
+        top: 1rem;
+        margin-left:-6.7rem;
+        margin-top:3.7rem;
+        font-size: 1rem;
+    }
+}
+    
+.p1{
+        margin-bottom: 2px;
+        font-size: 1.6rem;
+        margin-top: -0;
+      
+        margin: 2rem;
+       margin-left: 1rem;
+    }
+
+
+.p{
+    background: plum;
+    width: 3rem;
+    padding:1.8rem 1rem 1.8rem 1rem;
+    border-radius: 3rem;
+    text-align:center ;
+    font-size: 1.2rem;
+    margin-top:1.4rem;
+
+
+}
+
+.set{
+    
+    font-size: 1rem;
+    margin-bottom: .8rem;
+    margin-top:1em ;
+    
+}
+.manage{
+    font-size: 1.2rem;
+}
+.not{
+    margin-top: .6em;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.t{
+    background: plum;
+    width: 3rem;
+    padding:1.2rem .4rem 1.2rem .4rem;
+    border-radius: 2rem;
+    text-align:center ;
+    justify-self: center;
+    font-size: 1.2rem;
+    margin-top:1.4rem;
+}
+.name{
+    display: flex;
+    justify-content: center;
+  
+}
+h3{
+    text-align: center;
+}
+  .pa{
+        margin-top: 2.5rem;
+        margin-left: .8rem;
+        font-size: 1.4rem;
+
+    }
+.pas{
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(0, 0%, 30%);
+}
+.button{
+    display: block;
+    text-align: start;
+    margin-left: rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .5rem 1.5rem .5rem 1.5rem;
+     justify-self:center;
+    
+
+}
+.center{
+ display: flex;
+ justify-content: center;
+}
+.arr{
+    display: flex;
+    
+justify-content: end;
+position: relative;
+top: -1.1rem;
+left: 20rem;
+}
+@media(min-width:49em){
+    .account{
+        
+        margin-left:9rem ;
+        
+    }
+    .delete{
+      
+        margin-left:5rem ;
+        justify-self:center;
+    }
+  
+}

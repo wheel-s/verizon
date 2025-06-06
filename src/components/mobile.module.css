@@ -1,0 +1,242 @@
+
+
+
+
+
+
+.mobile{
+    margin-top: -5rem;
+    margin-left: -.4em;
+    position: fixed;
+}
+.hr{
+    height: .1px;
+}
+.bar{
+    background-color: hsl(220, 44%, 90%);
+    height:120vh;
+    width: 23rem;
+    border-radius: 5px;
+    display: none;
+    
+}
+
+
+.section{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+
+    
+
+}
+
+.name{
+    
+    margin-top: .5rem;
+    font-size: .9rem;
+    color:hsl(0, 0%, 0%);
+    letter-spacing: .9px;
+    border-radius: 2rem;
+    margin-top: 2.2rem;
+    font-family: shadows into light;
+    margin-left: .9rem;
+    cursor: pointer;
+}
+.img{
+    margin-left: .7rem;
+    margin-top: .7rem;
+    background: hsl(0, 0%, 80%);
+    border-radius: 2rem;
+    margin-top:rem;
+    
+}
+.hey{
+border-radius: 6px;
+}
+.close{
+    margin-left: 1.6rem;
+    position: relative;
+    top: 3rem;
+}
+
+a{
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: black;
+    margin-bottom: 10rem;
+}
+.home{
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+.banks{
+    margin-bottom: 2.5rem;
+    margin-left: 2em;
+}
+.history{
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+.transfer{
+    margin-bottom: 2.5rem;
+    margin-left: 2em;
+}
+.homeimg{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+}
+.bank{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+}
+.historys{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+}
+.transfers{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+    
+}
+.homelink{
+    margin-left: .2rem;
+    font-size: .88rem;
+}
+.banklink{
+    margin-left: .5rem;
+    font-size: .88rem;
+}
+.historylink{
+    margin-left: .5rem;
+    font-size: .88rem;
+}
+ 
+.nam{
+  font-size: 1rem;
+  font-family: 'shadows into light';
+  position: relative;
+  top:-2rem;
+  left: 2rem;
+}
+.veri{
+  
+  font-size: 1rem;
+  font-family:'MV BOLI' ;
+  color:black;
+  margin-left: .5rem;
+  
+  margin-bottom: -3.5rem;
+  position: relative;
+  top:1.5rem
+}
+  .mobilenav{
+   
+    padding: rem;
+  
+    font-size: 3rem;
+    display: block;
+    border-radius: 5px;
+    margin-left: 1rem;
+   
+  
+    
+  }
+  .logos{
+    background: hsl(0, 0%, 80%);
+    border-radius: 2rem;
+    margin-top: 1rem;
+    margin-left:3rem; 
+   
+
+  }
+
+  .nav{
+    display: flex;
+    justify-content:space-between;
+    
+  }
+  .navbar{
+    margin-top: .9rem;
+    margin-left: -.7rem;
+  }
+  .mubible{
+    
+    display: none;
+    position: relative;
+    
+    
+  }
+.input{
+    position: relative;
+
+    text-align: start;
+    top: -.2rem;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    padding: .5rem 4rem .5rem 1rem;
+  }
+.btn{
+    position: relative;
+        top: -.2rem;
+        right:3rem ;
+        text-align: center;
+      border-radius: 2rem;
+    padding: .5rem 1rem .5rem 1rem;
+       border-bottom-left-radius: 0rem;
+    
+}
+.sign{
+    position: relative;
+        top: -.5rem;
+        left: -1rem;
+        right:3rem ;
+        border: 1px solid;
+      border-radius: 2rem;
+      border-bottom-right-radius: .2rem;
+
+    padding: .7rem 2rem .6rem 2rem;
+    
+}
+@media(min-width:29em){
+ 
+    .bar{
+        display: block;
+
+    }
+   
+}
+
+
+   
+
+@media(max-width:40em){
+ 
+    .sign{
+        display: none;
+    }
+    .input{
+        width: 2rem;
+    }
+   
+}
+@media(max-width:29em){
+ 
+  
+    .input{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .logos{
+        margin-left: -.7rem;
+    }
+   
+}
+
+

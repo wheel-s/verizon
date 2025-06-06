@@ -1,0 +1,67 @@
+
+.delay{
+    display: flex;
+    justify-content: center;
+    margin-top: -3rem;
+    p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+.card{
+
+    background-color: hsl(210, 30%, 38%);
+    border-radius: 1rem;
+
+
+      height: 13rem;
+      width: 23rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    
+
+}
+.name{
+    color: white;
+    
+}
+.pa{
+    padding-top: 2rem;
+   color: white;  
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    color: wheat;
+}
+.button1{
+    display: block;
+    background-color: hsl(00, 30%, 45%);
+    text-align: start;
+    
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .7rem 2rem .6rem 2rem;
+     justify-self:center;
+
+
+    
+
+}
+.button2{
+    display: block;
+    background-color: transparent;
+    text-align: start;
+    margin-left: rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .7rem 2rem .6rem 2rem;
+     justify-self:center;
+     color: white;
+    
+
+}
+.msg{
+    color: aqua;
+    font-size: 1.1rem;
+}

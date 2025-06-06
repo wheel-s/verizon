@@ -1,0 +1,132 @@
+
+
+
+
+
+
+.mobile{
+    margin-top: 4rem;
+    margin-left: -2em;
+    position: fixed;
+}
+
+figure{
+    margin-top: -.2rem;
+    margin-bottom: 1.3rem;
+    margin-left: -1px;
+}
+.bar{
+    background-color: hsl(224, 24%, 519%);
+    height:120vh;
+    width: 20rem;
+    border-radius: 5px;
+    display: none;
+    
+}
+.p{
+ 
+    margin-left: -46rem;
+}
+
+
+.section{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+
+    
+
+}
+
+.name{
+    
+    margin-top: .5rem;
+    font-size: .9rem;
+    color:hsl(0, 0%, 0%);
+    letter-spacing: .9px;
+    border-radius: 2rem;
+    margin-top: 2.2rem;
+    font-family: shadows into light;
+    margin-left: .9rem;
+    cursor: pointer;
+}
+.img{
+    margin-left: .7rem;
+    margin-top: .7rem;
+    background: hsl(0, 0%, 80%);
+    border-radius: 2rem;
+    margin-top:rem;
+    
+}
+.hey{
+border-radius: 6px;
+}
+.close{
+    margin-left: 1.6rem;
+    position: relative;
+    top: 3rem;
+}
+
+
+a{
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: black;
+    margin-bottom: 10rem;
+}
+.home{
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+.banks{
+    margin-bottom: 2.5rem;
+    margin-left: 2em;
+}
+.history{
+    margin-bottom: 2.5rem;
+    margin-left: 2rem;
+}
+.transfer{
+    margin-bottom: 2.5rem;
+    margin-left: 2em;
+}
+.homeimg{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+}
+.bank{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+}
+.historys{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+}
+.transfers{
+    margin-bottom: -.3rem;
+    margin-right: .7rem;
+    
+}
+.homelink{
+    margin-left: .2rem;
+    font-size: .88rem;
+}
+.banklink{
+    margin-left: .5rem;
+    font-size: .88rem;
+}
+.historylink{
+    margin-left: .5rem;
+    font-size: .88rem;
+}
+ 
+
+
+@media(max-width:49em){
+ 
+    .mobile{
+        display: none;
+
+    }
+}

@@ -1,0 +1,46 @@
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.img{
+margin-left: 1rem;
+
+display: flex;
+position: fixed;
+justify-content: center;
+bottom: .1rem;
+left:1rem;
+background-color: white;
+padding:.7rem 1.5rem .5rem .5rem;
+height: 2rem;
+border-radius: 4px;
+margin-inline: auto;
+}
+
+.home{
+    margin-left: 1.5rem;
+
+}
+.search{
+    margin-left: 2rem;
+
+}
+.add{
+    margin-left: 2.2rem;
+
+}
+.msg{
+    margin-left: 2.2rem;
+
+}
+.profile{
+    margin-left: 2.2rem;
+   
+}
+
+@media(min-width:29em) {
+    .img{
+        display: none;
+    }
+}

@@ -1,0 +1,55 @@
+
+.extra{
+    display: flex;
+    justify-content: center;
+
+}
+
+.card{
+
+    background-color: hsl(210, 30%, 36%);
+    border-radius: 1rem;
+
+
+      height: 10rem;
+      width: 23rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    
+
+}
+.name{
+    color: white;
+    
+}
+.pa{
+   color: white;  
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+.button1{
+    display: block;
+    background-color: hsl(00, 30%, 35%);
+    text-align: start;
+    margin-left: rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .7rem 2rem .6rem 2rem;
+     justify-self:center;
+    
+
+}
+.button2{
+    display: block;
+    background-color: transparent;
+    text-align: start;
+    margin-left: rem;
+    margin-top: 1rem;
+    border-radius: .8rem;
+     padding: .7rem 2rem .6rem 2rem;
+     justify-self:center;
+    
+
+}
+
