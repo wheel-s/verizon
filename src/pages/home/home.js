@@ -14,6 +14,7 @@ const Home = () => {
     const[imguser, setimguser] = useState('')
   const navigate = new useNavigate()
   const storage = localStorage.getItem('user')
+
   localStorage.setItem('imgBY' , imguser)
  useEffect(()=>{
 

@@ -16,7 +16,6 @@ import imag from '../images/pic7.jpg'
 
 const Favingle = () => {
     const storage = localStorage.getItem('user')
-
     const tokens=JSON.parse(storage)
     const {datas} = tokens
     const{user, userId, token} = datas
