@@ -17,10 +17,6 @@ const Home = () => {
   localStorage.setItem('imgBY' , imguser)
  useEffect(()=>{
 
-  const tokens=JSON.parse(storage)
-  const {datas} = tokens
-  const{user, userId, token} = datas
-
    fetch('https://server-l9fy.vercel.app/api/info')
     .then(res=>{return res.json()})
    .then(datas=>{setImages(datas)
