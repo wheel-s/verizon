@@ -11,7 +11,10 @@ const Favourites = () => {
     const[imguser, setimguser] = useState('')
   const navigate = new useNavigate()
   const storage = localStorage.getItem('user')
-    if(!storage == null || !storage ==''){
+   if(storage === null){
+      console.log(storage)
+    }
+    else{
     const tokens=JSON.parse(storage)
     const {datas} = tokens
     const{user, userId, token} = datas
