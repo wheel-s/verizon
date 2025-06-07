@@ -8,21 +8,19 @@ import { NavLink,Link, useNavigate } from 'react-router-dom'
 
 
 const Home = () => {
-  const[images, setImages] = useState([])
+ 
+    const[images, setImages] = useState([])
   const[imgId, setImgId] = useState('')
     const[imguser, setimguser] = useState('')
   const navigate = new useNavigate()
   const storage = localStorage.getItem('user')
+  localStorage.setItem('imgBY' , imguser)
+ useEffect(()=>{
+
   const tokens=JSON.parse(storage)
   const {datas} = tokens
   const{user, userId, token} = datas
-  if(!datas){
-    navigate('/')
-  }
 
-localStorage.setItem('imgBY' , imguser)
-
- useEffect(()=>{
    fetch('https://server-l9fy.vercel.app/api/info')
     .then(res=>{return res.json()})
    .then(datas=>{setImages(datas)
