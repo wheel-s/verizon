@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, us } from 'react'
+import { useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import user from './user.module.css'
 import Favourites from '../../components/favourites'
