@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/verizon/static/css/main.c0868515.css",
-    "main.js": "/verizon/static/js/main.a4b36833.js",
+    "main.js": "/verizon/static/js/main.a2ab5610.js",
     "static/js/453.ed3810f9.chunk.js": "/verizon/static/js/453.ed3810f9.chunk.js",
     "static/media/pic7.jpg": "/verizon/static/media/pic7.e5df2e8121ba46e3864d.jpg",
     "static/media/pic8.webp": "/verizon/static/media/pic8.51288babd091f39813c6.webp",
@@ -18,11 +18,11 @@
     "static/media/dark.webp": "/verizon/static/media/dark.9d106f4ae270a8927a10.webp",
     "index.html": "/verizon/index.html",
     "main.c0868515.css.map": "/verizon/static/css/main.c0868515.css.map",
-    "main.a4b36833.js.map": "/verizon/static/js/main.a4b36833.js.map",
+    "main.a2ab5610.js.map": "/verizon/static/js/main.a2ab5610.js.map",
     "453.ed3810f9.chunk.js.map": "/verizon/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0868515.css",
-    "static/js/main.a4b36833.js"
+    "static/js/main.a2ab5610.js"
   ]
 }
