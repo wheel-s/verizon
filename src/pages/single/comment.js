@@ -28,14 +28,10 @@ const Comment = () => {
     },[Msg])
     const Post = ()=>{
   const storage = localStorage.getItem('user')
-     if(storage === null){
-      console.log(storage)
-    }
-    else{
     const tokens=JSON.parse(storage)
     const {datas} = tokens
     const{user, userId, token} = datas
-    }
+    
   const info = JSON.stringify( {comment:input, user:user, createdBy:imgId})
    
    fetch('https://server-l9fy.vercel.app/api/comment',{
