@@ -16,10 +16,13 @@ import imag from '../../images/pic7.jpg'
 
 const Single = () => {
     const storage = localStorage.getItem('user')
+    if(!storage == null || !storage ==''){
+    const tokens=JSON.parse(storage)
+    const {datas} = tokens
+    const{user, userId, token} = datas
+    }
     const [Msg, setMsg] =useState('')
-  const tokens=JSON.parse(storage)
-  const {datas} = tokens
-  const{user, userId, token} = datas
+
 const [img, setimg] = useState('')
   const {id} = useParams()
   const navigate = useNavigate()

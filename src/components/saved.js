@@ -11,9 +11,11 @@ const Saved = () => {
     const[imguser, setimguser] = useState('')
   const navigate = new useNavigate()
   const storage = localStorage.getItem('user')
-  const tokens=JSON.parse(storage)
-  const {datas} = tokens
-  const{user, userId, token} = datas
+    if(!storage == null || !storage ==''){
+    const tokens=JSON.parse(storage)
+    const {datas} = tokens
+    const{user, userId, token} = datas
+    }
 
 
 
