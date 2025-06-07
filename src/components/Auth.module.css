@@ -124,9 +124,9 @@ justify-content: center;
 .sign{
     text-align: center;
     margin-top: -.8rem;
-  font-size: 1rem;
+  font-size: .9rem;
   a{
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 .footer{
