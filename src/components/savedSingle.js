@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState ,useEffect } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink, useParams, useNavigate } from 'react-router-dom'
 import single from '../pages/single/single.module.css'
 import image from '../images/pic8.webp'
 import back from '../images/arrow.png'
@@ -29,7 +29,7 @@ const [img, setimg] = useState('')
   const imguser = localStorage.getItem('imgBY')
 
   useEffect(()=>{
-    fetch(`https://server-l9fy.vercel.app/api/favourite/${id}`)
+    fetch(`https://server-l9fy.vercel.app/api/info/${id}`)
     .then(res=>{return res.json()})
    .then(datas=>{setimg(datas)})
     .catch(err=>{console.log(err)})
@@ -57,26 +57,23 @@ const [img, setimg] = useState('')
      ad.classList.toggle('hide')
     
   }
+  const navigate = useNavigate()
 const Remove=()=>{
-    const info = JSON.stringify( {img:img.image, user:userId,})     
-     fetch('https://server-l9fy.vercel.app/api/faourites',{
-      method:'POST',
+       fetch(`https://server-l9fy.vercel.app/api/info/${id}`,{
+      method:'DELETE',
       headers:{
+        'authorization':`Bearer ${token}`,
         'Content-Type':'application/json'},
-      body:info
+    
        })
-       .then(res=>{
-        if(!res.ok){
-          console.log(res.json())
-        }
-        return res
-      })
+       .then(res=>{return res.json()})
       .then(datas=>console.log(datas))
       .catch(err=>console.log(err))
       
-      setMsg('***posted comment***')
+      setMsg('***Deleted data***')
       setTimeout(() => {
       setMsg('')
+      navigate('/user')
       },3000);
 }
   return (

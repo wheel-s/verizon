@@ -42,7 +42,7 @@ function App() {
           <Route path='/profile' element={<Pofile/>}></Route>
           <Route path='/single/:id' element={<Single/>}></Route>
           <Route path='/favsingle/:id' element={<Favsingle/>}></Route>
-          <Route path='/savedsingle' element={<Savedsingle/>}></Route>
+          <Route path='/savedsingle/:id' element={<Savedsingle/>}></Route>
           <Route path='/comment' element={<Comment/>}></Route>
           <Route path='/account' element={<Account/>}></Route>
           <Route path='/' element={<SignUP/>}></Route>

@@ -13,47 +13,50 @@ const Saved = () => {
   const storage = localStorage.getItem('user')
     const tokens=JSON.parse(storage)
     const {datas} = tokens
+   
     const{user, userId, token} = datas
     
 
-
  useEffect(()=>{
-   fetch(`https://server-l9fy.vercel.app/api/info/created/${userId}`)
-    .then(res=>{return res.json()})
-   .then(datas=>{console.log(datas)
-
-
-   })
+   fetch(`https://server-l9fy.vercel.app/api/info/created`,
+    {
+     headers:{
+      'authorization':`Bearer ${token}`
+       }
+    }
+   ) .then(res=>{return res.json()})
+   .then(datas=>{setImages(datas) })
     .catch(err=>{console.log(err)})
      
-
-
-
  },[])
+
   return (
     <div className={home.home}>
         <div className={home.grid} >
     {
       
+      
+            
+            images.map((item, index)=>{
+            
+              return(
+               <Link to={`/savedSingle/${item._id}`} key={index} >  
+               <div className='show'>
+                <div className={home.card} >
+                
+                <img src={item.image} alt={'img'} className={home.img} onClick={()=>{setimguser(item.user)}} data-id={item._id} /> 
+                  
+                  </div>
+                  </div>
+            </Link> 
+          
+                        
+              
+              )
+            })
+         
     }
     </div>
-      <div className={home.grid} >
-        <NavLink to='/savedsingle'>
-          <div className={home.card}>
-          
-                <img src={image} alt={'img'} className={home.img} />
-              
-            
-            </div>
-           
-               <div className={home.card}>
-          
-                <img src={homme} alt={'img'} className={home.img} />
-              
-            
-            </div>
-        </NavLink>
-        </div>
     </div>
   )
 }
