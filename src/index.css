@@ -4,7 +4,7 @@
 
 .show{
     transition-property:  opacity display overlay;
-    transition-duration: .8s;
+    transition-duration: .3s;
     transition-behavior: allow-discrete;
   
      visibility: visible;
