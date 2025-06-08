@@ -6,37 +6,30 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 const Favourites = () => {
-    const[images, setImages] = useState([])
+  const[images, setImages] = useState([])
   const[imgId, setImgId] = useState('')
-    const[imguser, setimguser] = useState('')
+  const[imguser, setimguser] = useState('')
   const navigate = new useNavigate()
   const storage = localStorage.getItem('user')
-    const tokens=JSON.parse(storage)
-    const {datas} = tokens
-    const{user, userId, token} = datas
+  const tokens=JSON.parse(storage)
+  const {datas} = tokens
+  const{user, userId, token} = datas
     
  
 
 
 
  useEffect(()=>{
-   fetch('https://server-l9fy.vercel.app/api/favourite',
-  
+   fetch(`https://server-l9fy.vercel.app/api/favourite/all/${userId}`,
     {
-
      headers:{
       'authorization':`Bearer ${token}`
-    }}
-   )
-    .then(res=>{return res.json()})
-   .then(datas=>{console.log(datas)
-
-
-   })
+       }
+    }
+   ) .then(res=>{return res.json()})
+   .then(datas=>{setImages(datas) })
     .catch(err=>{console.log(err)})
      
-  
-
  },[])
 
   return (
@@ -51,11 +44,12 @@ const Favourites = () => {
       
         return(
          <Link to={`/favsingle/${item._id}`} key={index} >  
-       
+         <div className='show'>
           <div className={home.card} >
           
           <img src={item.image} alt={'img'} className={home.img} onClick={()=>{setimguser(item.user)}} data-id={item._id} /> 
             
+            </div>
             </div>
       </Link> 
     

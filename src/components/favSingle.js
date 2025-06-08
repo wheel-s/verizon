@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState ,useEffect } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink, useParams, useNavigate } from 'react-router-dom'
 import single from '../pages/single/single.module.css'
 import image from '../images/pic8.webp'
 import back from '../images/arrow.png'
@@ -19,11 +19,10 @@ const Favingle = () => {
     const tokens=JSON.parse(storage)
     const {datas} = tokens
     const{user, userId, token} = datas
-    
+    const navigate = useNavigate()
     const [Msg, setMsg] =useState('')
-
-const [img, setimg] = useState('')
-  const {id} = useParams()
+    const [img, setimg] = useState('')
+    const {id} = useParams()
 
  localStorage.setItem('ID', id)
   const imguser = localStorage.getItem('imgBY')
@@ -35,6 +34,12 @@ const [img, setimg] = useState('')
     .catch(err=>{console.log(err)})
     
   },[]) 
+  useEffect(()=>{
+  const ad = document.querySelector('#show')
+  setTimeout(() => {
+    ad.classList.add('shows') 
+  }, 800);
+})
   
  const  close= ()=>{
       const ad = document.querySelector('#close')
@@ -58,37 +63,38 @@ const [img, setimg] = useState('')
     
   }
 const Remove=()=>{
-    const info = JSON.stringify( {img:img.image, user:userId,})     
-     fetch('https://server-l9fy.vercel.app/api/faourites',{
-      method:'POST',
+   
+     fetch(`https://server-l9fy.vercel.app/api/favourite/${id}`,{
+      method:'DELETE',
       headers:{
+        'authorization':`Bearer ${token}`,
         'Content-Type':'application/json'},
-      body:info
+    
        })
-       .then(res=>{
-        if(!res.ok){
-          console.log(res.json())
-        }
-        return res
-      })
+       .then(res=>{return res.json()})
       .then(datas=>console.log(datas))
       .catch(err=>console.log(err))
       
-      setMsg('***posted comment***')
+      setMsg('***Removed from favourites***')
       setTimeout(() => {
       setMsg('')
+      navigate('/user')
       },3000);
 }
   return (
     <div className={single.single}>
+         <div id='show'>
        <NavLink to='/user'><img src={back} alt={'img'} width={20}  className={single.back} /></NavLink>
        <div className={single.grid}>
+     
       <div className={single.card}>
           
           <img src={img.image} alt={'img'}  className={single.img} id='img' />
           
       </div>
       </div>
+      </div>
+        
       <div className={single.icons}>
         <div>
         <img src={like} alt={'img'} width={29}  className={single.like} onClick={Like} id='likes' />
@@ -98,7 +104,7 @@ const Remove=()=>{
          </div>
           <section> <button className={single.button}  onClick={Remove}>Remove</button> </section>
       </div>
-  
+    <h3>{Msg}</h3>
          <div className='hide' id='close' >
             <More onCancel={close } onCover={Cover} />
           </div>

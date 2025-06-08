@@ -97,7 +97,7 @@ useEffect(()=>{
 const ad = document.querySelector('#show')
 setTimeout(() => {
   ad.classList.add('shows') 
-}, 800);
+}, 700);
 
      
  
