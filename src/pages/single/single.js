@@ -93,14 +93,25 @@ const Save=()=>{
       },3000);})
       .catch(err=>console.log(err))     
 }
+useEffect(()=>{
+const ad = document.querySelector('#show')
+
+ 
+     
+ 
+},[])
+
   return (
     <div className={single.single}>
        <NavLink to='/home'><img src={back} alt={'img'} width={20}  className={single.back} /></NavLink>
        <div className={single.grid}>
+
+       <div className='' id='show'>
       <div className={single.card}>
+
+         <img src={img.image} alt={'img'}  className={single.img} id='img' />
           
-          <img src={img.image} alt={'img'}  className={single.img} id='img' />
-          
+      </div>
       </div>
       </div>
       <div className={single.icons}>

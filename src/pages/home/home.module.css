@@ -2,7 +2,7 @@
 .home{
  margin-top: 2rem;
  height: 110vh;
- margin-bottom: 1rem;
+    margin-bottom: 17rem;
    
 }
 p{
@@ -10,7 +10,7 @@ p{
   
 }
 .p{
-         text-align: start; 
+    text-align: start; 
      margin-top: rem;
 }
 hr{
@@ -26,18 +26,18 @@ hr{
     padding: 17px;
     max-width: 1200%;  
     margin:0 auto;
-    
+
 }
 
 .card{
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(0, 0%, 90%);
     border-radius: 1rem;
     margin-bottom: .2rem;
     overflow: hidden;
       display: flex;
       justify-content: center;
     
-    box-shadow: 0 5px 10px rgba(0, 0, 0,.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 1,.2);
     
 }
 .img{
@@ -50,7 +50,7 @@ hr{
     margin-left: .4rem;
     margin-top: .6rem;
     
-    
+
     
 }
 
