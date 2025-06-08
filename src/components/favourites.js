@@ -20,7 +20,7 @@ const Favourites = () => {
 
 
  useEffect(()=>{
-   fetch(`https://server-l9fy.vercel.app/api/favourite/all/${userId}`,
+   fetch(`https://server-l9fy.vercel.app/api/favourite`,
     {
      headers:{
       'authorization':`Bearer ${token}`
