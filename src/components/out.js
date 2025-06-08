@@ -11,7 +11,9 @@ const Out = ( props) => {
         props.onClick()
         setTimeout(() => {
          navigate('/')  
+         
         }, 1000);
+          const storage = localStorage.setItem('user', '')
     }
     
   return (

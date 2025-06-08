@@ -1,28 +1,36 @@
 import React from 'react'
 import { useState} from 'react'
-import { NavLink } from 'react-router-dom'
-import user from './user.module.css'
+import { NavLink, useNavigate } from 'react-router-dom'
+import users from './user.module.css'
 import Favourites from '../../components/favourites'
 
 const User = () => {
   
     const [input, setinput] = useState('')
     const [fav, setfav] = useState(false)
+    const navigate = useNavigate() 
+  const storage = localStorage.getItem('user')
+   const tokens=JSON.parse(storage)
+  const {datas} = tokens
+  const{user, userId, token} = datas
+  if(storage==null){
+    navigate('/')
+  }
  
   return (
-    <div className={user.user}>
-      <div className={user.header}>
-       <div className={user.account}>
-            <NavLink to='/account'><p className={user.p}>T</p></NavLink>
+    <div className={users.user}>
+      <div className={users.header}>
+       <div className={users.account}>
+            <NavLink to='/account'><p className={users.p}>{user[0]}</p></NavLink>
         </div>
-       <div className={user.control}>
+       <div className={users.control}>
                 
          <input type='text'  placeholder='Enter your Email' value={input} onChange={(e)=>setinput(e.target.value)}/>
           </div>
       </div>
-      <p className={user.pa}>your favourites</p>
-      <hr className={user.hr}></hr>
-      <div className={user.fav}>
+      <p className={users.pa}>your favourites</p>
+      <hr className={users.hr}></hr>
+      <div className={users.fav}>
           <Favourites/>
       </div>
    

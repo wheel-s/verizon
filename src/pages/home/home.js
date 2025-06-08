@@ -16,6 +16,9 @@ const Home = () => {
   const storage = localStorage.getItem('user')
 
   localStorage.setItem('imgBY' , imguser)
+    if(storage==null){
+    navigate('/')
+  }
  useEffect(()=>{
 
    fetch('https://server-l9fy.vercel.app/api/info')

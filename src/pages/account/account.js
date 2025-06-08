@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import account from './account.module.css'
 import arrow from '../../images/arrow.png'
 import Extra from '../../components/extra'
@@ -25,9 +25,17 @@ const Account = () => {
     const active = document.querySelector('#active')
     active.classList.remove('hide')
     active.classList.add('show')
-  console.log('jdc')
- 
+
   
+  
+  }
+  const navigate = useNavigate() 
+  const storage = localStorage.getItem('user')
+  const tokens=JSON.parse(storage)
+  const {datas} = tokens
+  const{user, userId, token} = datas
+  if(storage==null){
+    navigate('/')
   }
   return (
     <div className={account.account}>
@@ -38,7 +46,7 @@ const Account = () => {
         <div className={account.txt}> 
              <p className={account.p}>T</p>
         
-          <p className={account.p1}>Toshiro</p>
+          <p className={account.p1}>{user}</p>
           <span>veiw profile</span>
              
         </div>
