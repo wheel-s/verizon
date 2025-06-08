@@ -4,7 +4,7 @@
 
 .show{
     transition-property:  opacity display overlay;
-    transition-duration: .6s;
+    transition-duration: .8s;
     transition-behavior: allow-discrete;
   
      visibility: visible;
@@ -16,6 +16,17 @@
     }
 
 }
+
+.shows{
+         visibility: visible;
+    opacity: 1;
+    translate: 0 -5vh;
+    transition-property:  opacity display overlay;
+    transition-duration: .8s;
+    transition-behavior: allow-discrete;
+
+}
+
 .hide{
       visibility: hidden;
     opacity: 0;

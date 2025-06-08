@@ -3,7 +3,7 @@
 .single{
     margin-top: -2rem;
         margin-bottom: 6rem;
-    
+      margin-top: .3rem;
 }
 .grid{
     
@@ -14,7 +14,7 @@
     padding: 17px;
      
     margin:0 auto;
-    
+  
 }
 .card{
     background-color: hsl(0, 0%, 96%);
@@ -52,7 +52,7 @@
 .icons{
     display: flex;
     justify-content: space-between;
-    margin-top: .1rem;
+    margin-top: -2rem;
 
 }
 .like{

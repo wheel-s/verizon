@@ -44,7 +44,7 @@ const Account = () => {
          
         
         <div className={account.txt}> 
-             <p className={account.p}>T</p>
+             <p className={account.p}>{user[0]}</p>
         
           <p className={account.p1}>{user}</p>
           <span>veiw profile</span>

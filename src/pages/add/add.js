@@ -33,7 +33,7 @@ const  Add = () => {
 
  const info = JSON.stringify( {image:image,title:title, user:user, link:link})
 const [data, setdata] = useState('')
-console.log(image)
+
    const Upload= ()=>{
 
 

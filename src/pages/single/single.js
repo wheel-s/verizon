@@ -95,18 +95,21 @@ const Save=()=>{
 }
 useEffect(()=>{
 const ad = document.querySelector('#show')
+setTimeout(() => {
+  ad.classList.add('shows') 
+}, 800);
 
- 
      
  
 },[])
 
   return (
     <div className={single.single}>
+         <div className='' id='show'>
        <NavLink to='/home'><img src={back} alt={'img'} width={20}  className={single.back} /></NavLink>
        <div className={single.grid}>
 
-       <div className='' id='show'>
+   
       <div className={single.card}>
 
          <img src={img.image} alt={'img'}  className={single.img} id='img' />
