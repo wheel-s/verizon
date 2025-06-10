@@ -76,8 +76,20 @@ const Remove=()=>{
       navigate('/user')
       },3000);
 }
+useEffect(()=>{
+const ad = document.querySelector('#show')
+setTimeout(() => {
+  ad.classList.add('shows') 
+}, 700);
+
+     
+ 
+},[])
   return (
     <div className={single.single}>
+      <div id='show'>
+
+      
        <NavLink to='/profile'><img src={back} alt={'img'} width={20}  className={single.back} /></NavLink>
        <div className={single.grid}>
       <div className={single.card}>
@@ -90,7 +102,7 @@ const Remove=()=>{
         <div>
         <img src={like} alt={'img'} width={29}  className={single.like} onClick={Like} id='likes' />
        <NavLink to='/comment'> <img src={msg} alt={'img'} width={29}  className={single.comment} /></NavLink>
-        <img src={share} alt={'img'} width={25}  className={single.share} />
+
           <img src={more} alt={'img'} width={26}  className={single.more} onClick={show} />
          </div>
           <section> <button className={single.button}  onClick={Remove}>Delete</button> </section>
@@ -99,7 +111,7 @@ const Remove=()=>{
          <div className='hide' id='close' >
             <More onCancel={close } onCover={Cover} />
           </div>
-
+      </div>
     </div>
   )
 }

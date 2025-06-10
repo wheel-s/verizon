@@ -18,7 +18,7 @@
 }
 
 .shows{
-         visibility: visible;
+     visibility: visible;
     opacity: 1;
     translate: 0 -5vh;
     transition-property:  opacity display overlay;
@@ -27,6 +27,16 @@
 
 }
 
+
+.sho{
+    transition-property:  opacity display overlay;
+    transition-duration: .8s;
+    transition-behavior: allow-discrete;
+    @starting-style{
+      opacity: 0;
+      translate: 0 -8vh;
+    }
+}
 .hide{
       visibility: hidden;
     opacity: 0;

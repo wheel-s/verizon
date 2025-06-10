@@ -44,7 +44,7 @@ const Home = () => {
       
         return(
          <Link to={`/single/${item._id}`} key={index} >  
-       <div className='show'>
+       <div className='sho'>
           <div className={home.card} >
           
           <img src={item.image} alt={'img'} className={home.img} onClick={()=>{setimguser(item.user)}} data-id={item._id} /> 
